@@ -1,8 +1,8 @@
 <div>
-<%= link_to("Add a job", new_admin_job_path, :class => "btn btn-default" )%>
+<%= link_to("Add a job", new_admin_job_path, :class => "btn btn-default jobbut" )%>
 </div>
 <div class="dropdown clearfix pull-right">
-    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <button class="btn btn-default dropdown-toggle jobbut" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       排序
         <span class="caret"></span>
     </button>
@@ -20,7 +20,7 @@
         </li>
     </ul>
 </div>
-<table class="table table-boldered">
+<table class="table table-boldered  table-striped custab bg">
     <thead>
         <tr>
             <td>职缺</td>
@@ -30,7 +30,7 @@
         </tr>
 
     </thead>
-    <tbody>
+    <tbody class="zhique">
         <% @jobs.each do |job| %>
         <tr>
             <td>

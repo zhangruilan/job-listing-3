@@ -18,3 +18,137 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
+
+ .jumbotron {
+   background-image:url('http://img.sc115.com/uploads/sc/psd/131018/1310186.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-bottom: 110px;
+ }
+
+ .title {
+   max-width: 500px;//最大宽度
+   font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
+   text-align: left;
+   margin-top: 120px;
+   margin-bottom: 10px;
+ }
+
+ .slogan {
+   margin-top: 10px;
+   margin-bottom: 30px;
+   text-align: left;
+   color: #000407;
+   top: 12px;
+ }
+
+ .lead {
+   margin-bottom: 80px;
+   text-align: left;
+   color: #000407;
+ }
+
+ .caption {
+  margin: 30px;
+  text-align: center;
+  top: 20px;
+}
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    margin-top: 30px;
+}
+
+ .navbar-default {
+   background-color: #dbedfa;
+   border-color: #dbedfa;
+   margin-bottom: 0;
+ }
+
+ @media (min-width: 768px) {
+   .navbar {
+     border-radius: 0;
+   }
+ }
+
+.navbar-default .navbar-brand {
+  color: #000407;//heise 导航栏
+  padding:10px 15px;
+  line-height: 30px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color:#063456;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a{
+  color: #000407;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #FF6F00;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #FF6F00;
+  background-color: #FFE0B2;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    background-color: #FFE0B2;
+    color: #212121;
+}
+
+.navbar-brand > img {
+    display: inline-block;	//图片和链接文字显示在同一行
+    margin-right: 10px; //图片和链接文字拉开一点距离
+    width: 32px; //定制图片宽度
+    height: 32px; //定制图片高度
+}
+
+.container-fluid .jumbotron{
+  padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
+  margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+  border-radius: 0;//圆角为0
+}
+
+.custab{
+  border: 1px solid #ccc;
+
+  padding: 5px;
+  margin: 5% 0;
+  box-shadow: 3px 3px 2px #ccc;
+
+  transition: 0.5s;
+}
+
+.custab:hover{
+  box-shadow: 3px 3px 0px transparent;
+  transition: 0.5s;
+}
+
+
+.bg{
+  background-color: #d9eaf6;
+  font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
+  text-align: center;
+
+}
+
+.jobbut{
+  margin: 10px 10px;
+  background-color: #4db9e7;
+  padding: 8px 10px;
+}
+
+.zhique{
+  text-align: center;
+}
